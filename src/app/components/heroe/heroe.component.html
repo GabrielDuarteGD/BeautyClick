@@ -1,0 +1,52 @@
+<h1>{{ heroe.nombre | uppercase}}</h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+    <div class="col-md-4">
+        <img [src]="heroe.img" class="img-fluid" alt="heroe.nombre">
+        <br><br>
+        <a [routerLink]="['/heroes']" routerLinkActive="router-link-active" class="btn btn-outline-danger btn-block">Volver</a>
+    </div>
+    <div class="col-md-8">
+        <h3>Datos Personales</h3>
+        <hr>
+        <p>{{ heroe.bio }}</p>
+        <p>Email: {{ heroe.aparicion }}</p>
+        <p>Obra Social: {{ heroe.casa }}</p>
+        <hr>
+        <h5>Tratamientos realizados</h5>
+        <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Tratamiento Criolipolisis
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                     Se realiza aplicación de máquina sobre zona abdominal lateral.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Depilación definitiva
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Se realiza tratamiento sobre zona de piernas completas, axilas y cavado.
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+
+</div>

@@ -1,0 +1,19 @@
+<h1>Pacientes</h1>
+<hr>
+<div class="row">
+    <div class="col">
+      <input #termino type="text" (keyup)= "buscar(termino.value)" class="form-control"
+      placeholder="Buscar paciente...">
+    </div>
+  </div>
+  <div>
+      <br>
+      <h2>Búsquedas recientes</h2>
+    </div>
+<div class="card-columns">
+    <!-- *ngFor="let heroe of heroes, let i = index" -->
+
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes, let i = index"></app-heroe-tarjeta>
+
+
+</div>
