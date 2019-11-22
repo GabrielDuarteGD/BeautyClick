@@ -27,5 +27,12 @@ export class HeroesComponent implements OnInit {
     this._router.navigate( ['/heroe', idx]);
   }
 
+  buscar(termino: string) {
+    this._heroesService.getHeroe(termino)
+    .subscribe( (data: any) => {
+      console.log(data);
+});
+  }
+
 }
 
