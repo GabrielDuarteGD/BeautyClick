@@ -9,19 +9,19 @@ import {APP_ROUTING} from './app.routes';
 
 
 //Servicios
-import { HeroesService } from './services/heroes.service';
+import { PacientesService } from './services/pacientes.service';
 
 //Componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { HeroesComponent } from './components/heroes/heroes.component';
+import { PacientesComponent } from './components/pacientes/pacientes.component';
 
 import { from } from 'rxjs';
-import { HeroeComponent } from './components/heroe/heroe.component';
+import { PacienteComponent } from './components/heroe/paciente.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
-import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { PacienteTarjetaComponent } from './components/paciente-tarjeta/paciente-tarjeta.component';
 import { AltaPacienteComponent } from './components/paciente/alta-paciente/alta-paciente.component';
 import { RecetaComponent } from './components/paciente/receta/receta.component';
 import { TratamientoComponent } from './components/paciente/tratamientos/tratamiento/tratamiento.component';
@@ -33,10 +33,10 @@ import { NuevoTratamientoComponent } from './components/paciente/tratamientos/nu
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent,
-    HeroeComponent,
+    PacientesComponent,
+    PacienteComponent,
     BuscadorComponent,
-    HeroeTarjetaComponent,
+    PacienteTarjetaComponent,
     AltaPacienteComponent,
     RecetaComponent,
     TratamientoComponent,
@@ -47,7 +47,7 @@ import { NuevoTratamientoComponent } from './components/paciente/tratamientos/nu
     APP_ROUTING
   ],
   providers: [
-    HeroesService
+    PacientesService
   ],
   bootstrap: [AppComponent]
 })

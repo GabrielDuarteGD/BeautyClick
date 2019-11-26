@@ -13,7 +13,7 @@
 <div class="card-columns">
     <!-- *ngFor="let heroe of heroes, let i = index" -->
 
-    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes, let i = index"></app-heroe-tarjeta>
+    <app-paciente-tarjeta (pacienteSeleccionado)="verPaciente($event)" [paciente]="paciente" [index]="i" *ngFor="let paciente of pacientes, let i = index"></app-paciente-tarjeta>
     
 
 </div>

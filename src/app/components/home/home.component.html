@@ -1,3 +1,4 @@
+<div class="class container">
 <div class="jumbotron jumbotron-fluid animated fadeIn fast" style="background-color:#D6A0A0;">
     <div class="container">
         <h1 class="display-4" style="color:#FFFFFF">¡Bienvenida, Daiana!</h1>
@@ -13,3 +14,24 @@
           <p class="card-text"  style="color:#000000">10</p>
         </div>
       </div>
+<div align="center">
+      <table class="table table-dark col-8" >
+        <thead>
+          <tr>
+            <th scope="col">Orden</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tratamiento</th>
+            <th scope="col">Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let paciente of pacientes, let i = index">
+            <th scope="row">{{i}}</th>
+            <td>{{paciente.nombre + ' ' + paciente.apellido}}</td>
+            <td>Crio</td>
+            <td>8:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
