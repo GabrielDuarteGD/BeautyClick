@@ -11,7 +11,7 @@ export class PacientesService {
       img: 'assets/img/chica1.jpg',
       aparicion: 'ailenguarda@gmail.com',
       tratamiento: 'Criolipolisis',
-      turno: '15/12/2019'
+      turno: '15/12/2019',
       casa: 'Sancor Salud'
     },
     {
